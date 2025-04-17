@@ -21,9 +21,9 @@ public:
 
     void display() {
         cout << "Name: " << name << endl;
-        cout << "Basic Salary: $" << basicSalary << endl;
-        cout << "Bonus: $" << bonus << endl;
-        cout << "Total Salary: $" << totalSalary() << endl;
+        cout << "Basic Salary: Rs" << basicSalary << endl;
+        cout << "Bonus: Rs" << bonus << endl;
+        cout << "Total Salary: Rs" << totalSalary() << endl;
         cout << "-------------------------" << endl;
     }
 };
