@@ -43,9 +43,9 @@ public:
 void handleStaticManagers() {
     const int n = 3;
     Manager managers[n] = {
-        Manager("Alice", 35, 101, "HR"),
-        Manager("Bob", 42, 102, "IT"),
-        Manager("Charlie", 38, 103, "Finance")
+        Manager("Rutvi", 18, 101, "HR"),
+        Manager("Poojan", 15, 102, "IT"),
+        Manager("xyz", 38, 103, "Finance")
     };
 
     for (int i = 0; i < n; ++i) {
