@@ -37,9 +37,9 @@ public:
 
 int main() {
     Student s1;
-    Student s2(101, "Riya", 85, 90, 88);
-    Student s3(102, "Aarav", 75, 80, 70);
-    Student s4(103, "Meera", 95, 92, 96);
+    Student s2(101, "Rutvi", 85, 90, 88);
+    Student s3(102, "Poojan", 75, 80, 70);
+    Student s4(103, "Rutvi Shah", 95, 92, 96);
 
     s1.display();
     s2.display();
