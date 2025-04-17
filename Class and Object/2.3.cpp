@@ -38,15 +38,15 @@ public:
     void showDetails() {
         cout << "Account Holder: " << name << endl;
         cout << "Account Number: " << accountNumber << endl;
-        cout << "Balance: $" << balance << endl;
+        cout << "Balance: Rs" << balance << endl;
         cout << "---------------------------" << endl;
     }
 };
 
 int main() {
     BankAccount a1;
-    BankAccount a2("Arjun Mehta", 1001, 5000.0);
-    BankAccount a3("Neha Sharma", 1002, 2500.0);
+    BankAccount a2("Rutvi Shah", 1001, 5000.0);
+    BankAccount a3("Poojan Shah", 1002, 2500.0);
 
     a1.showDetails();
     a2.showDetails();
