@@ -24,7 +24,7 @@ public:
     void display() {
         cout << "Account Number: " << accountNumber << endl;
         cout << "Holder Name: " << holderName << endl;
-        cout << "Balance: $" << balance << endl;
+        cout << "Balance: Rs" << balance << endl;
         cout << "--------------------------" << endl;
     }
 
