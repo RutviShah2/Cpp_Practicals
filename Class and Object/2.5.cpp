@@ -46,8 +46,8 @@ public:
 
 int main() {
     Loan l1;
-    Loan l2(101, "Aisha Khan", 50000, 7.5, 24);
-    Loan l3(102, "Rohit Mehra", 120000, 6.8, 60);
+    Loan l2(101, "Rutvi Shah", 50000, 7.5, 24);
+    Loan l3(102, "Poojan Shah", 120000, 6.8, 60);
 
     l1.display();
     l2.display();
