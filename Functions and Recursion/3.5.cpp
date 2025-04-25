@@ -1,18 +1,18 @@
 #include <iostream>
 using namespace std;
 
-long long digitSum(string n) {
-    long long sum = 0;
+int digitSum(string n) {
+    int sum = 0;
     for (char ch : n) {
         sum += ch - '0';
     }
     return sum;
 }
 
-int superDigit(long long n) {
+int superDigit(int n) {
     if (n < 10) return n;
 
-    long long sum = 0;
+    int sum = 0;
     while (n > 0) {
         sum += n % 10;
         n /= 10;
@@ -22,13 +22,14 @@ int superDigit(long long n) {
 
 int main() {
     string n;
-    long long k;
+    int k;
     cin >> n >> k;
 
-    long long initialSum = digitSum(n);
-    long long totalSum = initialSum * k;
+    int initialSum = digitSum(n);
+    int totalSum = initialSum * k;
 
     cout << superDigit(totalSum) << endl;
+    cout << "24DCS120_RUTVI SHAH" << endl;
 
     return 0;
 }
