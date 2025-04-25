@@ -43,16 +43,16 @@ public:
 int main() {
     const int n = 4;
     Student* students[n] = {
-        new Undergraduate("Alice", 78),
-        new Undergraduate("Bob", 88),
-        new Postgraduate("Clara", 76),
-        new Postgraduate("David", 59)
+        new Undergraduate("Rutvi", 78),
+        new Undergraduate("Poojan", 88),
+        new Postgraduate("Xyz", 76),
+        new Postgraduate("Abc", 59)
     };
 
     for (int i = 0; i < n; ++i) {
         students[i]->display();
     }
-
+std::cout<<"24DCS120_RUTVI SHAH"<<std::endl;
     for (int i = 0; i < n; ++i) {
         delete students[i];
     }
