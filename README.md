@@ -2,6 +2,7 @@ Welcome to my collection of C++ Practical Assignments!
 This repository includes real-world mini-projects covering OOP, Functions, Recursion, Pointers, File Handling, and STL — all using C++! 💻✨
 
 📋 Practical List
+
 1️⃣ Principles of Object-Oriented Programming
 1.1 🏦 Bank Account Management System (Deposit, Withdraw, Balance)
 
