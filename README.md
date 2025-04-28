@@ -4,6 +4,7 @@ This repository includes real-world mini-projects covering OOP, Functions, Recur
 📋 Practical List
 
 
+
 1️⃣ Principles of Object-Oriented Programming
 
 1.1 🏦 Bank Account Management System (Deposit, Withdraw, Balance)
