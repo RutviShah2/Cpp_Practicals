@@ -2,6 +2,7 @@ Welcome to my collection of C++ Practical Assignments! 🌟
 This repository contains real-world case studies and mini-projects implemented using C++ — applying concepts like OOP, Functions, Recursion, Inheritance, and Polymorphism. 💻📚
 
 📋 Practical List
+
 1️⃣ Principles of Object-Oriented Programming
 1.1 🏦 Bank Account Management System (Deposit, Withdraw, Balance)
 1.2 🛒 Retail Store Inventory Management (Procedural vs OOP Approach)
