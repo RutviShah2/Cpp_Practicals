@@ -92,3 +92,17 @@ This repository includes real-world mini-projects covering OOP, Functions, Recur
 8.4 🏆 Student Ranking System (Sort by Scores)
 
 8.5 📁 Directory Management (Folders and Files Hierarchy)
+
+9️⃣ Exception Handling
+
+9.1 ➗ Division Program with Exception Handling
+
+9.2 🧮 Square Root with Custom Exception
+
+9.3 🏦 Banking System with Transaction Logs
+
+9.4 📂 File Data Processing with Retry Logic
+
+9.5 📚 Library Management System with Custom Exceptions
+
+
