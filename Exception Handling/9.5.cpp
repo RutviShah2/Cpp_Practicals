@@ -3,8 +3,6 @@
 #include <queue>
 #include <string>
 using namespace std;
-
-// Base exception
 class LibraryException {
 public:
     virtual const char* what() const {
@@ -35,17 +33,16 @@ public:
 
 class Library {
 private:
-    map<int, string> books; // bookID -> bookName
-    map<int, bool> members; // memberID -> hasOverdueBooks
-    queue<pair<int, int>> borrowQueue; // (memberID, bookID)
+    map<int, string> books; 
+    map<int, bool> members; 
+    queue<pair<int, int>> borrowQueue;
 
 public:
     Library() {
-        // Sample books and members
         books[101] = "C++ Fundamentals";
         books[102] = "Data Structures";
         members[1] = false;
-        members[2] = true; // member 2 has overdue book
+        members[2] = true; 
     }
 
     void borrowBook(int memberId, int bookId) {
@@ -81,24 +78,23 @@ int main() {
     Library lib;
 
     try {
-        lib.borrowBook(1, 101);  // Valid
-        lib.borrowBook(2, 101);  // Overdue
+        lib.borrowBook(1, 101); 
+        lib.borrowBook(2, 101);
     } catch (LibraryException& e) {
         cout << "Exception: " << e.what() << endl;
     }
 
     try {
-        lib.borrowBook(3, 102);  // Invalid member
+        lib.borrowBook(3, 102);
     } catch (LibraryException& e) {
         cout << "Exception: " << e.what() << endl;
     }
-
     try {
-        lib.borrowBook(1, 999);  // Invalid book
+        lib.borrowBook(1, 999);  
     } catch (LibraryException& e) {
         cout << "Exception: " << e.what() << endl;
     }
-
     lib.processQueue();
     return 0;
 }
+
