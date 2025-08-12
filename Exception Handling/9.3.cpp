@@ -1,32 +1,26 @@
 #include <iostream>
 using namespace std;
-
-// Custom exception class
 class InsufficientFundsException {
 public:
     const char* what() const {
         return "Error: Withdrawal amount exceeds current balance.";
     }
 };
-
 class BankAccount {
 private:
     double balance;
     string transactionLog[100];
     int logCount;
-
 public:
     BankAccount() {
         balance = 0;
         logCount = 0;
     }
-
     void logTransaction(const string& log) {
         if (logCount < 100) {
             transactionLog[logCount++] = log;
         }
     }
-
     void deposit(double amount) {
         cout << "Entering deposit()\n";
         balance += amount;
@@ -64,22 +58,18 @@ public:
         return balance;
     }
 };
-
-// Function to simulate stack unwinding
 void performWithdrawal(BankAccount& account, double amount) {
     cout << "Entering performWithdrawal()\n";
     account.withdraw(amount);
     cout << "Exiting performWithdrawal()\n";
 }
-
 void startBanking() {
     cout << "Entering startBanking()\n";
     BankAccount myAccount;
-    myAccount.deposit(500);  // Initial deposit
-
+    myAccount.deposit(500); 
     try {
-        performWithdrawal(myAccount, 300);  // Valid
-        performWithdrawal(myAccount, 300);  // Will trigger exception
+        performWithdrawal(myAccount, 300);  
+        performWithdrawal(myAccount, 300);  
     } catch (const InsufficientFundsException& e) {
         cout << e.what() << endl;
     }
