@@ -1,8 +1,6 @@
 #include <iostream>
-#include <cmath> // For sqrt function
+#include <cmath>
 using namespace std;
-
-// Custom exception class
 class NegativeNumberException {
 public:
     const char* what() const {
@@ -12,7 +10,6 @@ public:
 
 int main() {
     char choice = 'y';
-
     while (choice == 'y' || choice == 'Y') {
         cout << "\nEnter a number to calculate its square root: ";
         double num;
@@ -37,3 +34,4 @@ int main() {
     cout << "Program ended." << endl;
     return 0;
 }
+
