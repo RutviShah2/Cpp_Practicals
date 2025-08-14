@@ -1,8 +1,6 @@
 #include <iostream>
 #include <cstring>
-
 using namespace std;
-
 struct Word {
     char* text;
     int count;
@@ -26,7 +24,6 @@ int isAlphabetOrDigit(char ch) {
     else
         return 0;
 }
-
 int main() {
     const int BUFFER_SIZE = 10000;
     char* paragraph = new char[BUFFER_SIZE];
@@ -80,12 +77,11 @@ int main() {
     for (int k = 0; k < size; k++) {
         cout << words[k].text << ": " << words[k].count << endl;
     }
-
     for (int k = 0; k < size; k++) {
         delete[] words[k].text;
     }
     delete[] words;
     delete[] paragraph;
-
     return 0;
 }
+
