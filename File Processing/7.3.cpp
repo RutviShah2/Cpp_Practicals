@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <cstring>
-
 using namespace std;
 
 struct Product {
@@ -44,7 +43,6 @@ void viewInventory(const char* filename) {
         cout << "Name: " << p.name << endl;
         cout << "Quantity: " << p.quantity << endl;
         cout << "Price: " << p.price << endl;
-        cout << "---------------------------------" << endl;
     }
 
     file.close();
@@ -94,7 +92,6 @@ int main() {
         cout << "4. Exit" << endl;
         cout << "Enter your choice: ";
         cin >> choice;
-
         switch (choice) {
             case 1:
                 addProduct(filename);
@@ -115,3 +112,4 @@ int main() {
 
     return 0;
 }
+
