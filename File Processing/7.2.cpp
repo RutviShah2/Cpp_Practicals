@@ -1,9 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <cstring>
-
 using namespace std;
-
 int isAlphabetOrDigit(char ch) {
     if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9'))
         return 1;
