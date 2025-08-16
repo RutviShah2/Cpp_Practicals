@@ -1,11 +1,9 @@
 #include <iostream>
 using namespace std;
-
 class DynamicArray {
     int* data;
     int size;
     int capacity;
-
     void resize() {
         capacity *= 2;
         int* newData = new int[capacity];
@@ -70,3 +68,4 @@ int main() {
 
     return 0;
 }
+
