@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 class Rectangle {
 private:
     double length;
@@ -43,3 +42,4 @@ int main() {
 
     return 0;
 }
+
