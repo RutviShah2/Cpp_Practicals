@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 class Item {
 private:
     int id;
@@ -64,3 +63,4 @@ int main() {
 
     return 0;
 }
+
