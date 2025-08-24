@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int recursiveSum(int arr[], int size) {
     if (size == 0)
         return 0;
@@ -36,3 +35,4 @@ int main() {
     delete[] arr;
     return 0;
 }
+
