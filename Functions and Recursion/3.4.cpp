@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 template <typename T>
 void display(T* arr, int size) {
     cout << "Elements: ";
@@ -84,3 +83,4 @@ int main() {
 
     return 0;
 }
+
