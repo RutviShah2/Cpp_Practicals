@@ -21,6 +21,6 @@ int main() {
     for (const auto& pair : wordFrequency) {
         std::cout << pair.first << ": " << pair.second << std::endl;
     }
-
     return 0;
 }
+
