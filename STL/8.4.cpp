@@ -17,7 +17,8 @@ void sortStudents(std::vector<Student>& students) {
     }
 }
 
-int main() {
+int main()
+{
     std::vector<Student> students;
     int n;
 
@@ -41,3 +42,4 @@ int main() {
 
     return 0;
 }
+
