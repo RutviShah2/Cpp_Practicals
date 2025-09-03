@@ -3,7 +3,8 @@
 #include <vector>
 #include <string>
 
-class DirectoryManager {
+class DirectoryManager
+{
 public:
     void createFolder(const std::string& folderName) {
         if (directories.find(folderName) == directories.end()) {
@@ -13,7 +14,8 @@ public:
         }
     }
 
-    void addFileToFolder(const std::string& folderName, const std::string& fileName) {
+    void addFileToFolder(const std::string& folderName, const std::string& fileName)
+{
         if (directories.find(folderName) != directories.end()) {
             directories[folderName].push_back(fileName);
         } else {
@@ -51,3 +53,4 @@ int main() {
 
     return 0;
 }
+
