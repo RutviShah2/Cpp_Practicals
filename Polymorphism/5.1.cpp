@@ -1,6 +1,7 @@
 #include <iostream>
 
-class Calculator {
+class Calculator
+{
     double results[10];
     int count;
 
@@ -30,7 +31,8 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     Calculator calc;
     calc.add(5, 3);
     calc.add(4.5f, 2.5f);
@@ -41,3 +43,4 @@ int main() {
 
     return 0;
 }
+
