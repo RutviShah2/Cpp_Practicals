@@ -36,11 +36,14 @@ int main() {
     p3 = p1 + p2;
     cout << "p1 + p2 again = "; p3.print();
 
-    if (p1 == p2) {
+    if (p1 == p2)
+    {
         cout << "p1 and p2 are the same." << endl;
-    } else {
+    } 
+    else {
         cout << "p1 and p2 are different." << endl;
     }
 
     return 0;
 }
+
