@@ -44,9 +44,11 @@ int main() {
     f.display();
     std::cout << "Converted to Celsius: " << c.getTemperature() << "\n";
 
-    if (c.getTemperature() == f.toCelsius()) {
+    if (c.getTemperature() == f.toCelsius())
+    {
         std::cout << "Temperatures are equal.\n";
-    } else {
+    } 
+    else {
         std::cout << "Temperatures are not equal.\n";
     }
 
@@ -59,11 +61,14 @@ int main() {
     f1.display();
     std::cout << "Converted to Celsius: " << c1.getTemperature() << "\n";
 
-    if (c1.getTemperature() == f1.toCelsius()) {
+    if 
+        (c1.getTemperature() == f1.toCelsius()) {
         std::cout << "Temperatures are equal.\n";
-    } else {
+    }
+    else {
         std::cout << "Temperatures are not equal.\n";
     }
 
     return 0;
 }
+
